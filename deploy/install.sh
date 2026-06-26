@@ -20,6 +20,17 @@ sudo systemctl start docker
 sudo usermod -aG docker $USER
 
 ############################################
+# Install Docker Compose
+############################################
+
+#Download the latest release:
+mkdir -p ~/.docker/cli-plugins
+curl -SL https://github.com/docker/compose/releases/download/v5.1.2/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+
+#Make it executable:
+chmod +x ~/.docker/cli-plugins/docker-compose
+
+############################################
 # Install AWS CLI v2
 ############################################
 echo "Installing AWS CLI..."
@@ -69,6 +80,7 @@ terraform -version
 docker --version
 aws --version
 kubectl version --client
+docker compose version
 
 echo ""
 echo "Installation completed successfully."
