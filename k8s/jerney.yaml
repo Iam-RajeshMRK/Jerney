@@ -2,7 +2,7 @@
 # Jerney Blog Platform - Kubernetes Manifest (Single File)
 # Includes: Namespace, Secrets, PVC (EBS), DB, Backend, Frontend
 # ==============================================================
-
+ima
 # ---- Namespace ----
 apiVersion: v1
 kind: Namespace
@@ -200,7 +200,7 @@ spec:
               echo "DB is ready!"
       containers:
         - name: backend
-          image: ghcr.io/Iam-RajeshMRK/Jerney/jerney-backend:17031ea
+          image: ghcr.io/iam-rajeshmrk/jerney/jerney-backend:17031ea
           ports:
             - containerPort: 5000
               protocol: TCP
@@ -307,7 +307,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: frontend
-          image: ghcr.io/Iam-RajeshMRK/Jerney/jerney-frontend:17031ea
+          image: ghcr.io/iam-rajeshrk/jerney/jerney-frontend:17031ea
           ports:
             - containerPort: 8080
               protocol: TCP
