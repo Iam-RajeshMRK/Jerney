@@ -18,6 +18,8 @@ A Gen-Z vibe blog platform built with a 3-tier architecture — React frontend, 
 
 ---
 
+Built with 🧤 by the Jerney team. No cap, this blog platform hits different 🛤️
+
 ## ✨ Features
 
 - 📝 Create blog posts with emoji vibes
@@ -177,4 +179,3 @@ The Vite dev server starts on `http://localhost:3000` and proxies `/api` request
 | `devops` | Full DevSecOps — Docker, Kubernetes (EKS), Terraform, CI/CD pipeline, security scanning |
 
 ---
-
